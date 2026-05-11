@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
-Z="__HELIOS_ZIP_URL__"
-[[ "$Z" == "__HELIOS_ZIP_URL__" ]]&&{ echo "helios.sh: not configured";exit 1;}
+Z="https://github.com/rhenryw/helios-dist/raw/refs/heads/main/built-20260511_124552.zip"
+[[ "$Z" == "https://github.com/rhenryw/helios-dist/raw/refs/heads/main/built-20260511_124552.zip" ]]&&{ echo "helios.sh: not configured";exit 1;}
 D="$HOME/.helios"
 pkill -f helios_core 2>/dev/null||true
 rm -rf "$D"&&mkdir -p "$D"
